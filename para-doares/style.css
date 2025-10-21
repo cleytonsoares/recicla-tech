@@ -44,18 +44,6 @@ header.site-header {
   align-items: center;
 }
 
-.logo {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #0b8457, #10b981);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-}
-
 .brand-text small {
   display: block;
   font-size: 12px;
@@ -90,46 +78,6 @@ header.site-header {
   border: 1px solid rgba(11, 132, 87, 0.12);
 }
 
-.hero {
-  padding: 44px 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-  align-items: center;
-}
-
-.hero-left {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
-  padding: 26px;
-  border-radius: 18px;
-  box-shadow: 0 6px 24px rgba(2, 6, 23, 0.06);
-}
-
-.kicker {
-  color: #0b8457;
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-h1 {
-  font-size: 28px;
-  margin: 10px 0 8px;
-  line-height: 1.08;
-}
-
-.lead {
-  color: #6b7280;
-  margin-bottom: 18px;
-}
-
-.cta-row {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
 .hero-right {
   display: flex;
   justify-content: center;
@@ -156,33 +104,6 @@ h1 {
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 4px 18px rgba(2, 6, 23, 0.04);
-}
-
-.how {
-  padding: 36px 0;
-}
-
-.steps {
-  display: grid;
-  gap: 12px;
-}
-
-.step {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.badge {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: #0b8457;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
 }
 
 .cards {
@@ -212,17 +133,6 @@ h1 {
 
 .muted {
   color: #6b7280;
-}
-
-.features {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.feature p {
-  margin: 6px 0 0;
 }
 
 @media (min-width: 768px) {

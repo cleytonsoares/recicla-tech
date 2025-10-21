@@ -40,13 +40,13 @@ body {
   margin: 0;
 }
 
-.container {
+.container { //manter
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-header.site-header {
+header.site-header { //manter
   padding: 18px 0;
   background: linear-gradient(
     90deg,
@@ -55,7 +55,7 @@ header.site-header {
   );
   backdrop-filter: blur(6px);
 }
-.header-inner {
+.header-inner { //manter
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,24 +66,13 @@ header.site-header {
   gap: 12px;
   align-items: center;
 }
-.logo {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, $brand, $accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-}
 .brand-text small {
   display: block;
   font-size: 12px;
   color: $muted;
 }
 
-.nav {
+.nav { //manter
   display: flex;
   gap: 10px;
 }
@@ -108,51 +97,11 @@ header.site-header {
   border: 1px solid rgba(11, 132, 87, 0.12);
 }
 
-.hero {
-  padding: 44px 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-  align-items: center;
-}
-.hero-left {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.4)
-  );
-  padding: 26px;
-  border-radius: 18px;
-  box-shadow: 0 6px 24px rgba(2, 6, 23, 0.06);
-}
-.kicker {
-  color: $brand;
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-h1 {
-  font-size: 28px;
-  margin: 10px 0 8px;
-  line-height: 1.08;
-}
-.lead {
-  color: $muted;
-  margin-bottom: 18px;
-}
-
-.cta-row {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.hero-right {
+.hero-right { //manter
   display: flex;
   justify-content: center;
 }
-.device-mock {
+.device-mock { //manter
   width: 320px;
   max-width: 84%;
   border-radius: 18px;
@@ -160,7 +109,7 @@ h1 {
   background: linear-gradient(180deg, #fff, #f3faf4);
   box-shadow: 0 10px 40px rgba(11, 132, 87, 0.08);
 }
-.grid-cards {
+.grid-cards { //manter
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
@@ -173,63 +122,30 @@ h1 {
   box-shadow: 0 4px 18px rgba(2, 6, 23, 0.04);
 }
 
-.how {
-  padding: 36px 0;
-}
-.steps {
-  display: grid;
-  gap: 12px;
-}
-.step {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-.badge {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: $brand;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-}
-
-.cards {
+.cards { //manter
   display: grid;
   gap: 12px;
   margin-bottom: 40px;
 }
-.info-card {
+.info-card { //manter
   background: $card;
   padding: 18px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(2, 6, 23, 0.04);
 }
 
-.footer-inner {
+.footer-inner { //manter
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
-.site-footer {
+.site-footer { //manter
   padding: 30px 0;
   color: $muted;
 }
-.muted {
+.muted {//manter
   color: $muted;
-}
-.features {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-.feature p {
-  margin: 6px 0 0;
 }
 
 // Responsivo
