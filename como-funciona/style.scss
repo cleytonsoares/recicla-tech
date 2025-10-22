@@ -6,33 +6,27 @@ $bg: #f7faf9;
 $card: #ffffff;
 $radius: 14px;
 
-// 🧭 Reset
-*{box-sizing:border-box}
-:root{--brand:#0b8457;--accent:#10b981;--muted:#6b7280;--bg:#f7faf9;--card:#ffffff}
+// 🔧 Reset
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   background: $bg;
   color: #111827;
-  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-// 🌐 Estrutura principal
+// 📦 Estrutura principal
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-// 🧩 Cabeçalho
-header.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 40px;
-  background: rgba(255, 255, 255, 0.75);
+// 🧭 Cabeçalho
+.site-header {
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
@@ -40,37 +34,20 @@ header.site-header {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
 
-.brand {
+.header-inner {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  padding: 16px 40px;
 }
 
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.brand-text img {
-  width: 220px;
-  height: auto;
-}
-
-.brand-text small {
-  font-size: 13px;
-  color: $muted;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-}
-
-// 🧭 Navegação
+// 🔹 Navegação (à esquerda)
 .nav {
   display: flex;
   gap: 12px;
 }
 
+// 🔹 Botões
 .btn {
   display: inline-flex;
   align-items: center;
@@ -104,7 +81,37 @@ header.site-header {
   }
 }
 
-// 🪄 Sessões de conteúdo
+// 🔹 Logo e texto (à direita)
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 200px;
+  height: auto;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.brand-text p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.brand-text small {
+  font-size: 0.8rem;
+  color: $muted;
+}
+
+// 💡 Sessões de conteúdo
 .how {
   padding: 80px 20px;
   text-align: center;
@@ -114,13 +121,12 @@ header.site-header {
   color: $brand;
   font-size: 1.9rem;
   margin-bottom: 0.4rem;
-  letter-spacing: -0.3px;
 }
 
 .how small {
-  display: block;
   color: $muted;
   margin-bottom: 2.4rem;
+  display: block;
   font-size: 0.95rem;
 }
 
@@ -144,7 +150,7 @@ header.site-header {
   text-align: center;
   transition: all 0.25s ease;
   &:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   }
 }
@@ -152,8 +158,8 @@ header.site-header {
 .badge {
   background: rgba(11, 132, 87, 0.1);
   color: $brand;
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -178,11 +184,10 @@ header.site-header {
 
 // 🦶 Rodapé
 .site-footer {
-  padding: 50px 20px;
-  background: #ffffff;
+  padding: 40px 20px;
+  background: #fff;
   color: $muted;
   border-top: 1px solid #e5e7eb;
-  text-align: center;
 }
 
 .footer-inner {
