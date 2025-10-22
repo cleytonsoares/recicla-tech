@@ -1,4 +1,4 @@
-// Variáveis
+// 🎨 Variáveis
 $brand: #0b8457;
 $accent: #10b981;
 $muted: #6b7280;
@@ -6,34 +6,38 @@ $bg: #f7faf9;
 $card: #ffffff;
 $radius: 14px;
 
-// Reset
-* { box-sizing: border-box; margin: 0; padding: 0; }
+// 🧭 Reset
+*{box-sizing:border-box}
+:root{--brand:#0b8457;--accent:#10b981;--muted:#6b7280;--bg:#f7faf9;--card:#ffffff}
 
-// Estrutura geral
 body {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   background: $bg;
   color: #111827;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+// 🌐 Estrutura principal
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+// 🧩 Cabeçalho
 header.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(6px);
+  padding: 16px 40px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
 
 .brand {
@@ -44,63 +48,83 @@ header.site-header {
 
 .brand-text {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .brand-text img {
-  width: 250px;
+  width: 220px;
   height: auto;
 }
 
 .brand-text small {
-  font-size: 14px;
-  color: #6b7280;
+  font-size: 13px;
+  color: $muted;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
+// 🧭 Navegação
 .nav {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .btn {
-  padding: 11px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
   border-radius: 10px;
   cursor: pointer;
   border: 0;
   font-weight: 600;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  transition: all 0.25s ease;
 }
 
 .btn-primary {
   background: $brand;
-  color: white;
+  color: #fff;
+  &:hover {
+    background: darken($brand, 8%);
+    transform: translateY(-2px);
+  }
 }
+
 .btn-ghost {
   background: transparent;
   color: $brand;
-  border: 1px solid rgba(11, 132, 87, 0.12);
+  border: 1px solid rgba(11, 132, 87, 0.18);
+  &:hover {
+    background: rgba(11, 132, 87, 0.05);
+    transform: translateY(-2px);
+  }
 }
 
+// 🪄 Sessões de conteúdo
 .how {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
+
 .how h2 {
   color: $brand;
-  font-size: 1.8rem;
-  margin-bottom: 0.25rem;
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.3px;
 }
+
 .how small {
   display: block;
   color: $muted;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
+  font-size: 0.95rem;
 }
 
+// 🧱 Etapas
 .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -112,18 +136,21 @@ header.site-header {
 .step {
   background: $card;
   border-radius: $radius;
-  padding: 1.8rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  padding: 2rem 1.6rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.2s;
-  &:hover { transform: translateY(-6px); }
+  transition: all 0.25s ease;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .badge {
-  background: rgba(11,132,87,0.1);
+  background: rgba(11, 132, 87, 0.1);
   color: $brand;
   width: 54px;
   height: 54px;
@@ -131,37 +158,40 @@ header.site-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
-  i {
-    width: 24px;
-    height: 24px;
-    stroke-width: 2;
-  }
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .step strong {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #111827;
   margin-bottom: 0.4rem;
 }
+
 .step p.muted {
   color: $muted;
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.5;
+  max-width: 260px;
 }
 
+// 🦶 Rodapé
 .site-footer {
-  padding: 40px 20px;
+  padding: 50px 20px;
   background: #ffffff;
   color: $muted;
   border-top: 1px solid #e5e7eb;
+  text-align: center;
 }
+
 .footer-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
   max-width: 1000px;
   margin: 0 auto;
+  font-size: 0.9rem;
 }

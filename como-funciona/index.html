@@ -1,99 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Como Funciona | Recicla Tech</title>
-  <meta name="description" content="Recicla Tech — conecte quem doa com quem precisa e reduza o desperdício eletrônico." />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="/img/minilogo.png" alt="mini logo"> 
-        <div class="brand-text">
-          <p class="brand-name">Recicla Tech</p> <small class="muted">Conectando doadores & quem precisa!</small>
-        </div>
-      </div>
-      <nav class="nav"> 
-        <a href="../index.html" class="btn btn-ghost">Home</a>
-        <a href="../como-funciona/index.html" class="btn btn-ghost is-active">Como Funciona</a>
-        <a href="../para-doares/index.html" class="btn btn-primary">Doar</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Como Funciona | Recicla Tech</title>
+    <meta
+      name="description"
+      content="Recicla Tech — conecte quem doa com quem precisa e reduza o desperdício eletrônico."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
 
-  <main>
-    <section class="how-it-works-section"> <h2>Como Funciona para Doadores?</h2>
-      <p class="subtitle muted">É mais fácil que trocar a pilha do controle!</p>
-      
-      <div class="steps grid-3"> <div class="step-card"> <div class="step-icon-wrapper"><i data-lucide="user-plus"></i></div> <div>
-            <strong class="step-title">1. Cadastro</strong>
-            <p class="muted">Doador e projetos criam perfil e informam necessidades.</p>
+  <body>
+    <!-- 🌱 Cabeçalho -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="/img/minilogo.png" alt="Recicla Tech logo" />
+          <div class="brand-text">
+            <p class="brand-name">Recicla Tech</p>
+            <small class="muted">Conectando doadores & quem precisa!</small>
           </div>
         </div>
-        <div class="step-card">
-          <div class="step-icon-wrapper"><i data-lucide="heart-handshake"></i></div>
-          <div>
-            <strong class="step-title">2. Match</strong>
-            <p class="muted">Sistema sugere destinos conforme tipo e estado do aparelho.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-icon-wrapper"><i data-lucide="truck"></i></div>
-          <div>
-            <strong class="step-title">3. Envio / Coleta</strong>
-            <p class="muted">Agendamento de coleta ou entrega em pontos parceiros.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="how-it-works-section is-secondary"> <h2>Para Adquirentes (Quem Recebe)</h2>
-      
-      <div class="steps grid-3">
-        <div class="step-card">
-          <div class="step-icon-wrapper"><i data-lucide="search"></i></div>
-          <div>
-            <strong class="step-title">1. Explore os itens</strong>
-            <p class="muted">Navegue pelos eletrônicos disponíveis.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-icon-wrapper"><i data-lucide="hand"></i></div>
-          <div>
-            <strong class="step-title">2. Demonstre interesse</strong>
-            <p class="muted">Clique em “Tenho interesse” no item desejado.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-icon-wrapper"><i data-lucide="gift"></i></div>
-          <div>
-            <strong class="step-title">3. Receba seu novo gadget</strong>
-            <p class="muted">Combine com o doador e aproveite seu eletrônico!</p>
-          </div>
-        </div>
+        <nav class="nav">
+          <a href="../index.html" class="btn btn-ghost">Home</a>
+          <a href="../como-funciona/index.html" class="btn btn-ghost is-active">Como Funciona</a>
+          <a href="../para-doares/index.html" class="btn btn-primary">Doar</a>
+        </nav>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Recicla Tech</strong>
-        <p class="muted">© <span id="year"></span> — Promovendo o reuso consciente</p>
-      </div>
-      <div class="footer-links muted">
-        <a href="#">Contato</a> • <a href="#">Política de privacidade</a> • <a href="#">FAQ</a>
-      </div>
-    </div>
-  </footer>
+    <!-- 💡 Seção: Como Funciona para Doadores -->
+    <main>
+      <section class="how">
+        <div class="container">
+          <h2>Como Funciona para Doadores?</h2>
+          <p class="subtitle muted">É mais fácil que trocar a pilha do controle!</p>
 
-  <script>
-    lucide.createIcons();
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+          <div class="steps">
+            <div class="step">
+              <div class="step-icon">
+                <i data-lucide="user-plus"></i>
+              </div>
+              <strong>1. Cadastro</strong>
+              <p class="muted">
+                Doador e projetos criam perfil e informam necessidades.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i data-lucide="heart-handshake"></i>
+              </div>
+              <strong>2. Match</strong>
+              <p class="muted">
+                Sistema sugere destinos conforme tipo e estado do aparelho.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i data-lucide="truck"></i>
+              </div>
+              <strong>3. Envio / Coleta</strong>
+              <p class="muted">
+                Agendamento de coleta ou entrega em pontos parceiros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 💚 Seção: Para Adquirentes -->
+      <section class="how alt">
+        <div class="container">
+          <h2>Para Adquirentes (Quem Recebe)</h2>
+          <p class="subtitle muted">Encontre, solicite e receba eletrônicos reutilizáveis.</p>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step-icon">
+                <i data-lucide="search"></i>
+              </div>
+              <strong>1. Explore os itens</strong>
+              <p class="muted">Navegue pelos eletrônicos disponíveis.</p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i data-lucide="hand"></i>
+              </div>
+              <strong>2. Demonstre interesse</strong>
+              <p class="muted">Clique em “Tenho interesse” no item desejado.</p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i data-lucide="gift"></i>
+              </div>
+              <strong>3. Receba seu novo gadget</strong>
+              <p class="muted">Combine com o doador e aproveite seu eletrônico!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 🦶 Rodapé -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Recicla Tech</strong>
+          <p class="muted">
+            © <span id="year"></span> — Promovendo o reuso consciente
+          </p>
+        </div>
+
+        <div class="footer-links muted">
+          <a href="#">Contato</a> •
+          <a href="#">Política de privacidade</a> •
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
