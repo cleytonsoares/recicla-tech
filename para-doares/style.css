@@ -83,15 +83,6 @@ header.site-header {
   justify-content: center;
 }
 
-.device-mock {
-  width: 320px;
-  max-width: 84%;
-  border-radius: 18px;
-  padding: 18px;
-  background: linear-gradient(180deg, #fff, #f3faf4);
-  box-shadow: 0 10px 40px rgba(11, 132, 87, 0.08);
-}
-
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -108,15 +99,31 @@ header.site-header {
 
 .cards {
   display: grid;
-  gap: 12px;
+  gap: 40px;
   margin-bottom: 40px;
 }
 
 .info-card {
   background: #ffffff;
-  padding: 18px;
+  padding: 50px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(2, 6, 23, 0.04);
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  width: 20%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer-inner {
