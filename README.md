@@ -44,7 +44,7 @@ Reduzir o descarte desnecessário de equipamentos eletrônicos (como notebooks, 
 
 - **Cabeçalho Fixo**: mini logo à esquerda e botões de navegação à direita.  
 - **Cards de Produtos**: apresentação organizada dos eletrônicos disponíveis.  
-- **Sessão de Depoimentos**: feedbacks reais de doadores e adquirentes.  
+- **Sessão de Depoimentos**: feedbacks de doadores e adquirentes.  
 - **CTA Final**: convite para engajamento na causa sustentável.
 
 ---
@@ -64,7 +64,7 @@ Tudo mantendo a boa legibilidade e equilíbrio visual.
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/recicla-tech.git
+   git clone https://github.com/cleytonsoares/recicla-tech.git
    ```
 
 2. Acesse o diretório:
@@ -105,4 +105,4 @@ Este projeto é de uso **educacional e não comercial**, podendo ser adaptado li
 ---
 
 > “Reciclar tecnologia é também reciclar oportunidades.” 🌍  
-Desenvolvido com 💚 por [Seu Nome]
+Desenvolvido com 💚 por [Cleyton Soares]
